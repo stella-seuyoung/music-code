@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  background-color: rgb(223, 250, 255);
+  text-align: center;
+  height:90%;
+  width:90%;
+}
+
+.title{
+  color: rgb(56, 56, 56);
+  padding: 3rem;
+}
+
+.stage_btn{
+  background-color: rgb(76, 154, 218);
+  color: white;
+  border-style: none;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
