@@ -1,0 +1,20 @@
+body{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  margin:0;
+  padding:0;
+  height:100vh;
+  overflow:hidden;
+}
+
+.drag-drop{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  
+}
+
+.drag-drop iframe{
+  border:none;
+}

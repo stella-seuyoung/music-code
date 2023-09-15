@@ -12,6 +12,7 @@ body{
 /*tile and block styling*/
 .draggable-elements{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 2rem;
 }
@@ -35,7 +36,7 @@ body{
 .droppable{
   height: 6.5rem;
   width: 6.5rem;
-  margin: 1rem auto;
+  margin: 2rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,6 +47,11 @@ body{
   background-color: white;
   border: 2px dashed black;
   transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+
+.droppable-elements{
+  display:flex;
+  flex-direction: row;
 }
 
 .droppable span{
@@ -62,7 +68,6 @@ body{
 
 .droppable.dropped{
   border-style: solid;
-  color: white;
 }
 
 .droppable.dropped span{

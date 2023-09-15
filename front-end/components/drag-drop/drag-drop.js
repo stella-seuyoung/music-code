@@ -58,7 +58,6 @@ function drop(event){
 
   /*Modify statements inside of this conditional statment
   to change the answer checking functionality.
-
   What we need to add: 
   1)'OK' button to check the answer
   2) If user answer is incorrect, reset all the tiles(Or leave tiles that are mathced with correct block)
@@ -67,10 +66,10 @@ function drop(event){
   if(draggableElementData === droppableElementData){
     event.target.classList.add("dropped");
     const draggableElement = document.getElementById(draggableElementData);
-    event.target.style.backgroundColor = draggableElement.style.color;
-    draggableElement.classList.add("dragged");
+    const draggableTile = draggableElement.querySelector('img').cloneNode(true);
+    event.target.classList.add("dragged");
     //fix the position if the tile is placed on the correct block.
-    draggableElement.setAttribute("draggable", "false");
-    event.target.insertAdjacentHTML("afterbegin", `<i class="fas fa-${draggableElementData}"></i>`);
+    event.target.innerHTML = '';
+    event.target.appendChild(draggableTile);
   }
 } 
